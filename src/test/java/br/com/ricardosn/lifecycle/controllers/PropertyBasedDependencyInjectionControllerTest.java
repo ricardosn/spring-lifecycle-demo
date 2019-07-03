@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.ricardosn.lifecycle.services.impl.PropertyBasedDependencyInjectionService;
+import br.com.ricardosn.lifecycle.services.impl.PropertyBasedDependencyInjectionEnglishService;
 
 public class PropertyBasedDependencyInjectionControllerTest {
 	
@@ -14,12 +14,12 @@ public class PropertyBasedDependencyInjectionControllerTest {
 	@Before
 	public void setUp() throws Exception {
 		this.controller = new PropertyBasedDependencyInjectionController();
-		this.controller.dependecyInjectionService = new PropertyBasedDependencyInjectionService();
+		this.controller.dependecyInjectionService = new PropertyBasedDependencyInjectionEnglishService();
 	}
 	
 	@Test
 	public void testEcho() throws Exception {
-		assertEquals(PropertyBasedDependencyInjectionService.MSG, controller.echo());
+		assertEquals(PropertyBasedDependencyInjectionEnglishService.MSG, controller.echo());
 	}
 	
 }
