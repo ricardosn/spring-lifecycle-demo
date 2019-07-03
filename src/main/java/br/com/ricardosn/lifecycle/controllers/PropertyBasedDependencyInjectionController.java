@@ -10,7 +10,6 @@ import br.com.ricardosn.lifecycle.services.DependencyInjectionService;
 public class PropertyBasedDependencyInjectionController {
 	
 	@Autowired
-	@Qualifier("propertyBasedDependencyInjectionService")
 	public DependencyInjectionService dependecyInjectionService;
 	
 	public String echo() {
