@@ -1,4 +1,4 @@
-package br.com.ricardosn.lifecycle.controller;
+package br.com.ricardosn.lifecycle.controllers;
 
 import org.springframework.stereotype.Controller;
 
