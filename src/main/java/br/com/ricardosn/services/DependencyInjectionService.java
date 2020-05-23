@@ -1,4 +1,4 @@
-package br.com.ricardosn.lifecycle.services;
+package br.com.ricardosn.services;
 
 public interface DependencyInjectionService {
 	

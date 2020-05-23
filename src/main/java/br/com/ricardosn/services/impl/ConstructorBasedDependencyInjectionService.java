@@ -1,8 +1,8 @@
-package br.com.ricardosn.lifecycle.services.impl;
+package br.com.ricardosn.services.impl;
 
 import org.springframework.stereotype.Service;
 
-import br.com.ricardosn.lifecycle.services.DependencyInjectionService;
+import br.com.ricardosn.services.DependencyInjectionService;
 
 @Service
 public class ConstructorBasedDependencyInjectionService implements DependencyInjectionService {

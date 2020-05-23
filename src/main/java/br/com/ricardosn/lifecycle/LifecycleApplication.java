@@ -8,8 +8,10 @@ import br.com.ricardosn.lifecycle.controllers.ConstructorBasedDependencyInjectio
 import br.com.ricardosn.lifecycle.controllers.FooController;
 import br.com.ricardosn.lifecycle.controllers.PropertyBasedDependencyInjectionController;
 import br.com.ricardosn.lifecycle.controllers.SetterBasedDependencyInjectionController;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"br.com.ricardosn.services", "br.com.ricardosn.lifecycle"})
 public class LifecycleApplication {
 
 	public static void main(String[] args) {

@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.ricardosn.lifecycle.services.impl.SetterBasedDependencyInjectionService;
+import br.com.ricardosn.services.impl.SetterBasedDependencyInjectionService;
 
 public class SetterBasedDependencyInjectionControllerTest {
 	
