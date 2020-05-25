@@ -1,5 +1,6 @@
 package br.com.ricardosn.lifecycle;
 
+import br.com.ricardosn.lifecycle.models.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -22,6 +23,9 @@ public class LifecycleApplication {
 		System.out.println(ctx.getBean(PropertyBasedDependencyInjectionController.class).echo());
 		System.out.println(ctx.getBean(SetterBasedDependencyInjectionController.class).echo());
 		System.out.println(ctx.getBean(ConstructorBasedDependencyInjectionController.class).echo());
+
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+		System.out.println(fakeDataSource);
 	}
 
 }
