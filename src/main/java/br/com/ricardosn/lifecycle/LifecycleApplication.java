@@ -1,6 +1,7 @@
 package br.com.ricardosn.lifecycle;
 
 import br.com.ricardosn.lifecycle.models.FakeDataSource;
+import br.com.ricardosn.lifecycle.models.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,6 +27,9 @@ public class LifecycleApplication {
 
 		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource);
+
+		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean("fakeJmsBroker");
+		System.out.println(fakeJmsBroker);
 	}
 
 }
